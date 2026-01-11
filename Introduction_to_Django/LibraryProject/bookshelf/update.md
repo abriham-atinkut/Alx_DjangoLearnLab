@@ -1,8 +1,8 @@
 # Update and display Output
 
 ```python
->>> update = Book.objects.get(id=2)
->>> print(update)
+>>> book = Book.objects.get(id=2)
+>>> print(book)
 ```
 
 ### Expected out put
