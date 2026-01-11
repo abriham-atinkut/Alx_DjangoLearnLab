@@ -4,7 +4,7 @@
 python manage.py shell
 >>>from bookshelf.models import Book
 >>> book = Book.objects.get(id=2)
->>> book1.delete()
+>>> book.delete()
 ```
 
 ### Expected out put
