@@ -2,6 +2,7 @@
 
 ```python
 >>> book = Book.objects.get(id=2)
+>>> book.title = "Nineteen Eighty-Four"
 >>> print(book)
 ```
 
