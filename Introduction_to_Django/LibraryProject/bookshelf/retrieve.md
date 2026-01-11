@@ -8,5 +8,5 @@
 ### Expected out put
 
 ```python
->>> Book object (1)
+>>> 1984 | George Orwell | 1949 
 ```
