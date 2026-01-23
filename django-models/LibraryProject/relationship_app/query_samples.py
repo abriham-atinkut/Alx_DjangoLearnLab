@@ -32,6 +32,7 @@ def list_books():
     library_name = "Kebede"
     Librarian.objects.get(name=library_name)
     book.all()
+    ["Library.objects.get(name=library_name)", "books.all()"]
 
 
 # from relationship_app.query_samples import librarian_info
