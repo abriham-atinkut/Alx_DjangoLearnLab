@@ -27,3 +27,5 @@ def librarian_info():
     print(f"Library {librarian.library.name}, is lead by {librarian.name} ")
 
 # from relationship_app.query_samples import librarian_info
+#  from relationship_app.models import Librarian 
+#  obj = Librarian.objects.get(id=1)
