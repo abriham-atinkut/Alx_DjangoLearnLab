@@ -17,6 +17,7 @@ def add_library():
     print(f"The Library: {library.name}")
     print("Books in library:", [b.title for b in library.book.all()])
 
+
 def add_librarian():
     library_name = Library.objects.get(id=1)
     librarian = Librarian.objects.create(name="Kebede", library=library_name)
@@ -25,6 +26,13 @@ def add_librarian():
 def librarian_info():
     librarian = Librarian.objects.get(id=1)
     print(f"Library {librarian.library.name}, is lead by {librarian.name} ")
+
+
+def list_books():
+    library_name = "Kebede"
+    Librarian.objects.get(name=library_name)
+    book.all()
+
 
 # from relationship_app.query_samples import librarian_info
 #  from relationship_app.models import Librarian 
