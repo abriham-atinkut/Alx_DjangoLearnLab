@@ -173,6 +173,8 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 # Enable browser XSS filtering
 SECURE_BROWSER_XSS_FILTER = True
 
+["SECURE_PROXY_SSL_HEADER", "HTTP_X_FORWARDED_PROTO"]
+
 # These settings protect against:
 # - Man-in-the-middle attacks
 # - Session hijacking
