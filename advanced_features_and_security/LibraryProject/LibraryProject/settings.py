@@ -142,6 +142,39 @@ CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
 
+
+# ============================
+# HTTPS & SECURITY SETTINGS
+# ============================
+
+# Redirect all HTTP requests to HTTPS
+SECURE_SSL_REDIRECT = True
+
+# HTTP Strict Transport Security (HSTS)
+# Browsers will only access the site via HTTPS for 1 year
+SECURE_HSTS_SECONDS = 31536000
+
+# Apply HSTS to all subdomains
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
+# Allow domain to be included in browser HSTS preload list
+SECURE_HSTS_PRELOAD = True
+
 # DEBUG is disabled to prevent sensitive data leakage
 # CSRF_COOKIE_SECURE ensures cookies are sent only via HTTPS
 # CSP middleware reduces the risk of XSS attacks
+
+# Prevent clickjacking
+X_FRAME_OPTIONS = "DENY"
+
+# Prevent MIME-type sniffing
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+# Enable browser XSS filtering
+SECURE_BROWSER_XSS_FILTER = True
+
+# These settings protect against:
+# - Man-in-the-middle attacks
+# - Session hijacking
+# - Clickjacking
+# - XSS attacks
