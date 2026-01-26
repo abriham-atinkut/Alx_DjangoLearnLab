@@ -121,5 +121,3 @@ class UserProfile(models.Model):
         return f"{self.user.username} - {self.role}"
 
 
-
-["class CustomUser(AbstractUser):", "date_of_birth", "profile_photo"]
