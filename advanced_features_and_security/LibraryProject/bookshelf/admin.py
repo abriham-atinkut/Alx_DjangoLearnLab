@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser
 from .models import Book
+admin.site.register(CustomUser, CustomUserAdmin)
 # Register your models here.
 
 class MyModelAdmin(admin.ModelAdmin):
@@ -25,3 +26,5 @@ class CustomUserAdmin(UserAdmin):
             'fields': ('date_of_birth', 'profile_photo'),
         }),
     )
+
+
