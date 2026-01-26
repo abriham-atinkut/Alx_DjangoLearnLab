@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import permission_required
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Book
 from django import forms
-
+from .forms import ExampleForm
 # Django forms validate and sanitize user input, preventing SQL injection
 # --- Book Form ---
 class BookForm(forms.ModelForm):
