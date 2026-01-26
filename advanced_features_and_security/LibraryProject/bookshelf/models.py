@@ -10,7 +10,7 @@ class Book(models.Model):
         return f"{self.title} | {self.author} | {self.publication_year}"
 
 # 🔹 Signal to auto-create profile
-@receiver(post_save, sender=User)
+# @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         UserProfile.objects.create(user=instance)
