@@ -119,3 +119,7 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.role}"
+
+
+
+["class CustomUser(AbstractUser):", "date_of_birth", "profile_photo"]
