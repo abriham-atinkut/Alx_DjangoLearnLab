@@ -30,4 +30,4 @@ class BookDeleteView(generics.DestroyAPIView):
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-["books", "books/create", "books/update", "books/delete"]
+# ["books", "books/create", "books/update", "books/delete"]
