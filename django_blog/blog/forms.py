@@ -20,3 +20,13 @@ class PostForm(forms.ModelForm):
                 tag_obj, created = Tag.objects.get_or_create(name=name)
                 instance.tags.add(tag_obj)
         return instance
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ["content"]
+        widgets = {
+            "content": forms.Textarea(attrs={"rows": 3, "placeholder": "Write a comment..."})
+        }
+
+# ["TagWidget()"]
